@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Kakao from '../views/Kakao.vue'
+import Example from '../views/Example.vue'
 
 Vue.use(VueRouter)
 
@@ -15,6 +16,11 @@ const routes = [
     path: '/kakao',
     name: 'Kakao',
     component: Kakao
+  },
+  {
+    path: '/example',
+    name: 'Example',
+    component: Example
   },
   {
     path: '/about',
