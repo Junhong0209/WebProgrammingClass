@@ -1,6 +1,9 @@
 <template>
     <div class="friend">
-        <div><img v-bind:src="friend.image"></div>
+        <div>
+            <img v-bind:src="friend.image">
+        </div>
+        
         <div class="friend-content">
             <h3 class="friend-name">{{ friend.name }}</h3>
             <span>{{ friend.content }}</span>
