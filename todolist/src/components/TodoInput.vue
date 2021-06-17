@@ -2,9 +2,7 @@
     <div class="inputBox shadow">
         <input type="text" class="TodoInput" v-model="newTodoItem" placeholder="이곳에 해야할 일을 적어주세요." v-on:keyup.enter="addTodo" />
 
-        <span class="addContainer" v-on:click="addTodo">
-            <button class="addBtn">+</button>
-        </span>
+        <img src="../assets/add.svg" class="add_img" v-on:click="addTodo" />
 
         <modal v-if="showModal" @close="showModal = false">
             <h3 slot="header">경고</h3>
@@ -47,6 +45,12 @@
 <style lang="scss">
     .selectedBox {
         text-align: left;
+    }
+
+    .add_img {
+        margin-left: 1%;
+        width: 2%;
+        vertical-align: bottom;
     }
 
     .addBtn {

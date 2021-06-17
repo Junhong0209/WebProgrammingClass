@@ -4,9 +4,7 @@
             <li v-for="(todoItem, index) in propsdata" v-bind:key="todoItem" class="shadow">
                 <input type="checkbox" class="checkBox" />
                 {{ todoItem }}
-                <span class="removeBtn" type="button" @click="removeTodo(todoItem, index)">
-                    <input type="button" value="Delete"/>
-                </span>
+                <img src="../assets/delete.svg" class="delete_img" @click="removeTodo(todoItem, index)" />
             </li>
         </transition-group>
   </section>
@@ -58,9 +56,10 @@ li {
     height: 35%;
 }
 
-.removeBtn {
+.delete_img {
     margin-left: auto;
-    color: #de4343;
+    width: 5%;
+    height: 60%;
 }
 
 .list-enter-active,
