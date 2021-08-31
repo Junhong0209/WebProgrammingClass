@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+}
+
+header {
+  margin-top: 80px;
+}
+
+a {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  list-style-type: none;
+  position: fixed;
+  top: 0;
+}
+
+.nav-item {
+  padding: 15px;
+  cursor: pointer;
+}
+
+.nav-item:nth-child(1) {
+  background-color: #092985;
+}
+
+.nav-item:hover {
+  background-color: #334C73;
+}

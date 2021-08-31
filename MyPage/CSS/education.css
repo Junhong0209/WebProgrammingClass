@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+body {
+  margin-top: 200px;
+}
+
+.school-table {
+  font-family: 'Jua', sans-serif;
+  font-size: 32px;
+  margin: auto;
+}
+
+.school-table a {
+  text-decoration: none;
+  color: black;
+}
+
+.school-table-container {
+  height: 100px;
+}
+
+.school-table-img {
+  text-align: center;
+}
+
+.elementary-school-img {
+  height: 55px;
+}
+.middle-school-img {
+  height: 55px;
+}
+.high-school-img {
+  height: 55px;
+}
