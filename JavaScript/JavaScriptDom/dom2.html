@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <div id='prod-pic'>
+    <img src='images/1.jpg' alt='images' id='profile' onclick='displaySrc()' />
+  </div>
+
+  <script>
+    function displaySrc() {
+      var img = document.querySelector('#profile');
+      alert('이미지 소스: ' + img.getAttribute('src'));
+    }
+  </script>
+</body>
+</html>

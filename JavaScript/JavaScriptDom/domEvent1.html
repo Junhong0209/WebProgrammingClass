@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <img src="images/1.jpg" id='img'>
+
+  <script>
+    var img = document.querySelector('#img');
+    img.onclick = changePic;
+
+    function changePic() {
+      img.src = 'images/2.jpg';
+    }
+  </script>
+</body>
+</html>
