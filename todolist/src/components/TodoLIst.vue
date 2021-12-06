@@ -7,7 +7,7 @@
                 <img src="../assets/delete.svg" class="delete_img" @click="removeTodo(todoItem, index)" />
             </li>
         </transition-group>
-  </section>
+    </section>
 </template>
 
 <script>

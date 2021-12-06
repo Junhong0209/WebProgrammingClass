@@ -1,17 +1,19 @@
-import './App.css';
+import { createGlobalStyle } from 'styled-components';
 import TodoTemplate from './components/TodoTemplate';
-import TodoInput from './components/TodoInput';
-import TodoList from './components/TodoList';
 
 function App() {
   return (
-    <div className="App">
-      <TodoTemplate>
-        <TodoInput />
-        <TodoList />
-      </TodoTemplate>
-    </div>
+    <>
+      <GlobalStyle />
+      <TodoTemplate />
+    </>
   );
 }
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    background-color: #435364
+  }
+`;
 
 export default App;
